@@ -23,8 +23,6 @@ public class Conta implements Serializable{
 	@CsvBindByName
 	private String status;
 	
-	private boolean aprovada;
-	
 	public Conta() {}
 	
 	public Conta(String agencia, String conta, String saldo, String status) {
@@ -64,14 +62,6 @@ public class Conta implements Serializable{
 
 	public void setStatus(String status) {
 		this.status = status;
-	}
-
-	public boolean isAprovada() {
-		return aprovada;
-	}
-
-	public void setStatusReceita(boolean aprovada) {
-		this.aprovada = aprovada;
 	}
 	
 }
